@@ -1,0 +1,89 @@
+.calculator {
+    margin: 0 auto;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0; /* Light grey for contrast */
+  }
+  
+  /* Existing styles below... */
+  
+  .display {
+    margin-bottom: 20px;
+  }
+  
+  .display input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .display .result {
+    text-align: right;
+    font-size: 1.5em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .buttons button {
+    padding: 20px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Number buttons */
+  .buttons button:nth-child(1),
+  .buttons button:nth-child(2),
+  .buttons button:nth-child(3),
+  .buttons button:nth-child(5),
+  .buttons button:nth-child(6),
+  .buttons button:nth-child(7),
+  .buttons button:nth-child(9),
+  .buttons button:nth-child(10),
+  .buttons button:nth-child(11),
+  .buttons button:nth-child(13) {
+    background-color: #001f3f;
+    color: white;
+  }
+  
+  /* Operator buttons */
+  .buttons button:nth-child(4),
+  .buttons button:nth-child(8),
+  .buttons button:nth-child(12),
+  .buttons button:nth-child(15) {
+    background-color: #0074D9;
+    color: white;
+  }
+  
+  /* Clear button (C) */
+  .buttons button:nth-child(14) {
+    background-color: #FF4136;
+    color: white;
+  }
+  
+  /* Equal button (=) */
+  .buttons button:nth-child(16) {
+    background-color: #B10DC9;
+    color: white;
+  }
+  
+  .buttons button:hover {
+    opacity: 0.8;
+  }
+  
